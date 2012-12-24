@@ -1,24 +1,52 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+ <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".HomeActivity" >
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+     xmlns:tools="http://schemas.android.com/tools"
+     tools:context=".HomeActivity" >
 
     <Button
         android:id="@+id/tomar_foto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
         android:text="Foto" />
+
+    <Button
+        android:id="@+id/choque"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="Choque"
+        android:text="Choque" />
+
+    <Button
+        android:id="@+id/Atropeyamiento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="Atropeyamiento"
+        android:text="Atropeyamiento" />
+    
+     <Button
+            android:id="@+id/lugarprohibido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Lugar"
+            android:text="Lugar Prohibido" />
+  
 
     <ImageView
         android:id="@+id/imagen_capturada"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/tomar_foto"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="130dp"
+        android:layout_marginTop="10dp"
         android:src="@drawable/ic_launcher" />
 
-</RelativeLayout>
+       
+</LinearLayout>
+
+</ScrollView>
